@@ -18,9 +18,9 @@ class PangoCairoTests: XCTestCase {
         XCTAssertNotNil(context.fontDescription)
         XCTAssertNotNil(context.gravityHint)
         XCTAssertNotNil(context.matrix)
-        let serial = context.serial
+        let serial = context.serial + 1
         context.changed()
-        XCTAssertEqual(context.serial, serial + 1)
+        XCTAssertEqual(context.serial, serial)
     }
 
 }
