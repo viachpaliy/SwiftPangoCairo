@@ -2,7 +2,7 @@ import CGLib
 import CCairo
 import CPango
 import GLib
-import GObject
+import GLibObject
 import Pango
 import Cairo
 
